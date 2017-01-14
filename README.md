@@ -3,7 +3,7 @@
 All config is in application.properties file
 param.group.username, param.input.dir, param.thread.count, param.output.file params must be specified, other are optional.
 
-The app scans param.input.dir for all .log files (including subdirectories). 
+The app scans param.input.dir for all .log files (including subdirectories). Applies selected filters (username, date range, message pattern) and put filtered logs to output file (defined by config).
 
 If any exception occurs during file processing (illegal file records structure) this file will be skipped.
 
